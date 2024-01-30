@@ -1,0 +1,35 @@
+Work on functionalities like:
+
+Login/Signup
+Reset password and Logout
+Similar products functionality
+Relevant Search functionaity
+Search history
+Image search option
+Sorting functionality
+
+Admin panel:
+  Blacklist user/location/pin code
+  Add categories/ sub categories/
+  Add product name, description, image/ multiple images/ actual & discounted prices.
+  Availability
+
+
+Order status
+Order Cancellation
+Refund/Return
+
+Age/height/size differences or scales
+Zoom product image
+Sharing the link of the product
+Wishlist
+Review
+User storage/ User cache after login
+
+Payment functionality:
+  Checkout, payment completion, receipt.
+  Different types of offers on Credit cards/ Debit cards
+  EMI Options
+Add to cart
+Increase/decrease/delete the item from the cart
+Location history and add/delete the address
