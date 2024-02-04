@@ -1,3 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
 h1{
     color: green;
 }
@@ -5,4 +13,12 @@ h1{
 .logo{
     height: 40px;
     width: 40px;
+}
+.nav-item a{
+    display: flex;
+    align-items: center;
+}
+.col .category{
+    display: flex;
+    justify-content: center;
 }
