@@ -1,0 +1,55 @@
+.forgot-pass{
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    padding: 40px 50px;
+    background-color: white;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 3px;
+}
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+    background-color: white;
+  }
+  
+  /* Full-width inputs */
+  input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  /* Center the avatar image inside this container */
+  .f-pass {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
