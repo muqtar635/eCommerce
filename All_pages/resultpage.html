@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0062365997.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../CSS/resultpage.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HEADER -->
+	<div class="wrapper">
+		<div class="nav_bar">
+			<div class="logo">
+				<a class="navbar-brand" href="../All_pages/home.html"><img src="../Images/car.jpg" class="logo"></a>
+			</div>
+			<div class="search_bar">
+				<input type="text" placeholder="Search here">
+				<button class="sbtn"><span class="material-symbols-outlined" id="search_icon">
+						search
+					</span></button>
+			</div>
+			<div class="signup">
+				<a href="../Authentication/login.html"><span class="material-symbols-outlined" id="login_icon">
+						account_circle
+					</span></a>
+			</div>
+			<div class="cart">
+				<span class="material-symbols-outlined" id="cart_icon">
+					shopping_cart
+				</span>
+			</div>
+			<div class="options" id="options_icon">
+				<span class="material-symbols-outlined">
+					more_vert
+				</span>
+			</div>
+			<hr>
+
+		</div>
+		<div style="width: 100%; height: 80px;"></div>
+	</div>
+	<!-- HEADER -->
+
+
+    <section class="section-content padding-y">
+        <div class="container">
+        
+        <div class="row">
+            <aside class="col-md-3">
+                
+        <div class="card">
+            <article class="filter-group">
+                <header class="card-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
+                        <h6 class="title">Categories</h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse_1" style="">
+                    <div class="card-body">
+                        
+                        <ul class="list-menu">
+                        <li><a href="#">People  </a></li>
+                        <li><a href="#">Watches </a></li>
+                        <li><a href="#">Cinema  </a></li>
+                        <li><a href="#">Clothes  </a></li>
+                        <li><a href="#">Home items </a></li>
+                        <li><a href="#">Animals</a></li>
+                        <li><a href="#">People </a></li>
+                        </ul>
+                        
+                    </div> <!-- card-body.// -->
+                </div>
+                <hr>
+            </article> <!-- filter-group  .// -->
+            <article class="filter-group">
+                <header class="card-header">
+                    <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
+                        <h6 class="title">Sizes </h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse_4" style="">
+                    <div class="card-body">
+                      <label class="checkbox-btn">
+                        <input type="checkbox">
+                        <span class="btn btn-light"> XS </span>
+                      </label>
+        
+                      <label class="checkbox-btn">
+                        <input type="checkbox">
+                        <span class="btn btn-light"> SM </span>
+                      </label>
+        
+                      <label class="checkbox-btn">
+                        <input type="checkbox">
+                        <span class="btn btn-light"> LG </span>
+                      </label>
+        
+                      <label class="checkbox-btn">
+                        <input type="checkbox">
+                        <span class="btn btn-light"> XXL </span>
+                      </label>
+                </div><!-- card-body.// -->
+                </div>
+                <hr>
+            </article> <!-- filter-group .// -->
+            
+            <article class="filter-group">
+                <header class="card-header">
+                    <a href="#">
+                        <h6 class="title">Price range </h6>
+                    </a>
+                </header>
+                <div class="filter-content collapse show" id="collapse_3" style="">
+                    <div class="card-body">
+                        
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label>Min</label>
+                          <!-- <input class="form-control" placeholder="$0" type="number"> -->
+                              <select class="mr-2 form-control">
+                                <option value="0">$0</option>
+                                <option value="50">$50</option>
+                                <option value="100">$100</option>
+                                <option value="150">$150</option>
+                                <option value="200">$200</option>
+                                <option value="500">$500</option>
+                                <option value="1000">$1000</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-right col-md-6">
+                          <label>Max</label>
+                              <select class="mr-2 form-control">
+                                <option value="50">$50</option>
+                                <option value="100">$100</option>
+                                <option value="150">$150</option>
+                                <option value="200">$200</option>
+                                <option value="500">$500</option>
+                                <option value="1000">$1000</option>
+                                <option value="2000">$2000+</option>
+                            </select>
+                        </div>
+                        </div> <!-- form-row.// -->
+                        <button class="btn btn-block btn-primary">Apply</button>
+                    </div><!-- card-body.// -->
+                </div>
+            </article> <!-- filter-group .// -->
+            
+        </div> <!-- card.// -->
+        
+            </aside> <!-- col.// -->
+            <main class="col-md-9">
+        
+        <header class="border-bottom mb-4 pb-3">
+                <div class="form-inline">
+                    <span class="mr-md-auto">32 Items found </span>
+                    
+                </div>
+        </header><!-- sect-heading -->
+        
+        <div class="row">
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Great item name goes here</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                                <del class="price-old">$1980</del>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-success">Added to cart </a>
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>	
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>	
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>	
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>	
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>	
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>	
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        
+            <div class="col-md-4">
+                <figure class="card card-product-grid">
+                    <div class="img-wrap"> 
+                        <img src="https://rukminim1.flixcart.com/image/1250/250/kwxv98w0/headphone/s/c/j/-original-imag9hxj7qmmyqmh.jpeg?q=20&crop=false">
+                        
+                    </div> <!-- img-wrap.// -->
+                    <figcaption class="info-wrap">
+                        <div class="fix-height">
+                            <a href="./product-detail.html" class="title">Product name goes here just for demo item</a>
+                            <div class="price-wrap mt-2">
+                                <span class="price">$1280</span>
+                            </div> <!-- price-wrap.// -->
+                        </div>
+                        <a href="#" class="btn btn-block btn-primary">Add to cart </a>	
+                    </figcaption>
+                </figure>
+            </div> <!-- col.// -->
+        </div> <!-- row end.// -->
+        
+        
+        <nav class="mt-4" aria-label="Page navigation sample">
+          <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+        
+            </main> <!-- col.// -->
+        
+        </div>
+        
+        </div> <!-- container .//  -->
+        </section>
+
+
+        <!-- FOOTER -->
+	<div class="footer">
+		<div class="container-fluid bg-danger text-white">
+			<footer class="pt-5">
+				<div class="row">
+					<div class="col-6 col-md-2 mb-3">
+						<h5>LINKS</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2"><a href="../All_pages/home.html" class="nav-link p-0 text-white">Home</a></li>
+							<li class="nav-item mb-2"><a href="../All_pages/product.html" class="nav-link p-0 text-white">Product</a></li>
+							<li class="nav-item mb-2"><a href="../All_pages/dashboard.html" class="nav-link p-0 text-white">Dashboard</a></li>
+							<li class="nav-item mb-2"><a href="../Authentication/login.html" class="nav-link p-0 text-white">Login</a></li>
+							<li class="nav-item mb-2"><a href="../Authentication/signup.html" class="nav-link p-0 text-white">Sign Up</a></li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Section</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2"><a href="../All_pages/home.html" class="nav-link p-0 text-white">Home</a></li>
+							<li class="nav-item mb-2"><a href="../All_pages/product.html" class="nav-link p-0 text-white">Product</a></li>
+							<li class="nav-item mb-2"><a href="../All_pages/dashboard.html" class="nav-link p-0 text-white">Dashboard</a></li>
+							<li class="nav-item mb-2"><a href="../Authentication/login.html" class="nav-link p-0 text-white">Login</a></li>
+							<li class="nav-item mb-2"><a href="../Authentication/signup.html" class="nav-link p-0 text-white">Sign Up</a></li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Section</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2"><a href="../All_pages/home.html" class="nav-link p-0 text-white">Home</a></li>
+							<li class="nav-item mb-2"><a href="../All_pages/product.html" class="nav-link p-0 text-white">Product</a></li>
+							<li class="nav-item mb-2"><a href="../All_pages/dashboard.html" class="nav-link p-0 text-white">Dashboard</a></li>
+							<li class="nav-item mb-2"><a href="../Authentication/login.html" class="nav-link p-0 text-white">Login</a></li>
+							<li class="nav-item mb-2"><a href="../Authentication/signup.html" class="nav-link p-0 text-white">Sign Up</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-5 offset-md-1 mb-3">
+						<form>
+							<h5>Subscribe to our newsletter</h5>
+							<p>Monthly digest of what's new and exciting from us.</p>
+							<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+								<label for="newsletter1" class="visually-hidden">Email address</label>
+								<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+								<button class="btn btn-primary" type="button">Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-3 border-top">
+					<p>© 2023 Company, Inc. All rights reserved.</p>
+					<ul class="list-unstyled d-flex">
+						<li class="ms-3"><a class="link-body-emphasis" href="#"><i
+									class="fa-brands fa-square-whatsapp fa-3x"></i></a></li>
+						<li class="ms-3"><a class="link-body-emphasis" href="#"><i
+									class="fa-brands fa-square-facebook fa-3x"></i></a></li>
+						<li class="ms-3"><a class="link-body-emphasis" href="#"><i
+									class="fa-brands fa-square-instagram fa-3x"></i></a></li>
+						<li class="ms-3"><a class="link-body-emphasis" href="#"><i
+									class="fa-brands fa-square-twitter fa-3x"></i></a></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+	<!-- FOOTER -->
+</body>
+</html>
